@@ -1,8 +1,31 @@
 # Pari_V8_MKI FINAL
 
  Fractal Audio axeFxIII midi controller MK1
-NEW version that has a user .ini file to make personal configuration settings.
 
+This version is the FINAL version for the MKI on the Arduino DUE
+
+several new functions 
+
+* A user .ini file to make personal configuration settings.
+* NEW ability to see effects in the scenpage 
+* Toggle effects by holding the button for 0.35sec
+* Hold button to go to the auditionmode
+* Hold to go to the Looper
+* Reselecting the scene will restore the effect toggle to default
+* Reselecting the preset in presetscreen will exit presetscreen and goto scenepage
+* Reselecting the preset in auditionModescreen will exit presetmode and goto scenepage
+* Holding the button to toggle the effect in the effectpage will do nothing... No more toggling errors
+
+You can customize your own colorsceme in the SD_ini.h file
+Just change the colorcode  TFT_[color]  
+
+HOW:  f.i.
+Open the SD_ini.h file in notepad++ 
+Change TFT_BLACK to TFT_YELLOW and save 
+Reflash the .ino to the Arduino and you have changed the color
+
+
+first time user?
 Copy the PARI_INI folder to:
 C:\Users[your_name]\Documents\Arduino\libraries\PARI_INI
 
