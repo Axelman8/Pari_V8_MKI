@@ -72,10 +72,10 @@ void setup()
 //Set SERIAL baud rate:
   while (!Serial);
   //Serial.begin(9600);   // Works good with the Serial.  Not very quick screen refresh on the peddleboard but it works good.
-  //Serial.begin(115200); // Works good with the Serial.  Some quicker screen refresh on the peddleboard. Looks very nice i like it.
+  Serial.begin(115200); // Works good with the Serial.  Some quicker screen refresh on the peddleboard. Looks very nice i like it.
   //Serial.begin(230400); // Does not work good with the Serial. Good screen refresh rates on the peddleboard :) 
   //Serial.begin(500000); // Forget the Serial, but screen refresh rate.  #TESTED:  It will work good for at least 3 hours straight!
-  Serial.begin(1000000);  // Screen refresh rate is awesome, my favor-it. #NOT TESTED: I dont know if it will hold up for 3 hours straight!
+  //Serial.begin(1000000);  // Screen refresh rate is awesome, my favor-it. #NOT TESTED: I dont know if it will hold up for 3 hours straight!
   Serial.flush();
 
 

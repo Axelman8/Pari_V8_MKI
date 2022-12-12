@@ -233,11 +233,11 @@ unsigned long lastMillis;             //for digital clock
 byte presetBank;
  
 
-// ADDED 2022 10 02
-unsigned long debounceDelay = 200;    // the debounce time; increase if the output flickers
-unsigned long holdTimeResult = 0;
-unsigned long timeStart = 0;
-unsigned long holdTime = 260;
+//// ADDED 2022 10 02
+//unsigned long debounceDelay = 200;    // the debounce time; increase if the output flickers
+//unsigned long holdTimeResult = 0;
+//unsigned long timeStart = 0;
+//unsigned long holdTime = 260;
 
 
 /* ================================================================================================================================= */
