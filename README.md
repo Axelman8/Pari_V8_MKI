@@ -1,4 +1,5 @@
-# Pari_V7.1_MKI
+# Pari_V8_MKI FINAL
+
  Fractal Audio axeFxIII midi controller MK1
 NEW version that has a user .ini file to make personal configuration settings.
 
@@ -37,9 +38,9 @@ With this file separated from the .ino files, you can flash new software version
 
 ================
 
-Future plans:
+**Future plans**: SKIPPED
 
--> having all user config settings in the ini file's, so updates would only be about flashing a .HEX file. No arduino IDE needed
+**-> having all user config settings in the ini file's, so updates would only be about flashing a .HEX file. No arduino IDE needed** SKIPPED
 
 ================
 
