@@ -292,9 +292,9 @@ void auditionmodeEnd_Selection()
     debugln(); debug(" -> Pressed Switch = "); debug(currentSwitch + 1);
   }
 
+
 void presetSelection()
 {
-      Axe.refresh();
       debugln(); debugln(); debug(" * function presetSelection started on switchSelect.h");
       if (auditionMode == true)
           {
@@ -326,6 +326,8 @@ void presetSelection()
             debugln(); debug(" -> Pressed Switch = "); debug(currentSwitch + 1);
             }
           }
+
+ //NOT AUDITIONMODE           
             else
               {
               CurPreset = (PresetNumb + currentSwitch);
@@ -339,8 +341,7 @@ void presetSelection()
               debugln(); debug(" PresetSelection PresetNumb = "); debug(PresetNumb);             
               getScenes = true;
               effectCycle = true;
-              sceneTopscreens();
-              scenepageRebuild();
+
         
         /*====== Here is if you reselect the preset, it will exit to scenepage =======*/
           if (CurPreset == active_Preset)
@@ -350,6 +351,8 @@ void presetSelection()
             else
             {              
               Axe.sendPresetChange(CurPreset);
+              scenepageRebuild();
+              sceneTopscreens();
               debugln(); debug(" -> Pressed Switch = "); debug(currentSwitch + 1);
               debugln(); debug(" -> getScenes set to: "); debug(getScenes);
               debugln(); debug(" -> effectcycle set to: ");  debug(effectCycle);
@@ -594,7 +597,7 @@ void presetDown_selection()
           debugln(); debug(" -> Pressed Switch = "); debug(currentSwitch + 1);
           scenepageRebuild();
           Axe.sendPresetDecrement();
-          //ini_scenes();
+
 }
 
 /*==================   OR  ========================*/   //  +1
@@ -609,7 +612,7 @@ void presetUp_selection()
           debugln(); debug(" -> Pressed Switch = "); debug(currentSwitch + 1);
           scenepageRebuild();
           Axe.sendPresetIncrement();
-          //ini_scenes();          
+      
 }
 
 void auditionmodePage_selection()

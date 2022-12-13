@@ -124,7 +124,6 @@ void onSystemChange()
 //       Set active presetname in screen 13
 /* ---------------------------------------------------------------------------------------------------------------------------------------*/
 void presetName_setting(AxePreset preset)   //Set active presetname in screen 13
-//void presetName_setting(onPresetChange(AxePreset *preset))   //Set active presetname in screen 13
 {
   debugln();  debugln();  debug(" * function presetName_setting started on axe_handler.h");
 
@@ -1480,15 +1479,16 @@ void onPresetChange(AxePreset preset)
   //================================
 
   /* setting the active sceneNumber and active_Preset for other functions */
-  sceneNumber  =  (preset.getSceneNumber()); //setting the active scenenumber
   active_Preset =  (preset.getPresetNumber()); //setting the AxeFX active presetnumber
+  sceneNumber   =  (preset.getSceneNumber()); //setting the active scenenumber
   CurPreset = active_Preset;
+  debugln(); debug(" variable active_sceneNumber = "); debug(sceneNumber);
   debugln(); debug(" variable active_Preset = "); debug(active_Preset);
   debugln(); debug(" variable CurPreset = "); debug(CurPreset);
 
   if (auditionMode == true)
   {
-  PresetNumb = PresetNumb;   //setting the Current preset like presetnumb
+  PresetNumb = CurPreset;   //setting the Current preset like presetnumb
   debugln(); debug(" variable PresetNumb on auditionmode = "); debug(PresetNumb);
   Auditionmode_settings();  // build up presetscreens and stay on preset screen
   debugln(); debugln();   debug(" * function onSceneName started on axe_handler.h");

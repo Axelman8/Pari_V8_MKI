@@ -217,7 +217,7 @@ bool effect0_bypass = false; bool effect1_bypass = false; bool effect2_bypass = 
 bool effect6_bypass = false; bool effect7_bypass = false; bool effect8_bypass = false; bool effect9_bypass = false; bool effect10_bypass = false;
 bool effectbypass;
 bool reset_effectbypass_state = false;
-bool auditionMode;
+bool auditionMode = false;
 bool looperActive;
 bool wahActive;
 bool sceneReselected = false;

@@ -357,7 +357,7 @@ void printSceneNumbers()
 
 
   void scenepageRebuild()
- {    //strcpy(page, "scene") == 0);
+ {    
       strcpy(page, "scene");
       CS1L, CS2L, CS3L, CS4L,CS6L, CS7L, CS8L, CS9L;
       tft.fillRect(0, 0, 160, 95, sceneStyle0_fillscreen);
@@ -369,7 +369,6 @@ void printSceneNumbers()
       CS1H, CS2H, CS3H, CS4H,CS6H, CS7H, CS8H, CS9H;
 
       printSceneNumbers();
-
       // here is the clearing of presetUp / presetDown effect
       CS5L, CS10L;
       tft.fillScreen(presetUpDown_screen_fillscreen);
